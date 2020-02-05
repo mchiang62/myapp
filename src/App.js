@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 import Header from "./Components/Header/Header";
 import Instruction from "./Components/Instruction/Instruction";
 // import Cards from "./Components/Cards/Cards";
-// import Wrapper from "./Components/Wrapper/Wrapper";
+import Wrapper from "./Components/Wrapper/Wrapper";
 import Card from "./Components/Card/Card";
 import cardDisplay from "./cardDisplay.json";
 
@@ -15,20 +15,18 @@ class App extends Component {
 
   render() {
     return (
-      <div class="home">
-        <h1> Memory Game </h1> <h4> Do not click the same twice! </h4>
-        {this.state.cardDisplay.map(cards => {
-          return (
-            <div className="container">
+      <Wrapper>
+        <div className="container">
+          <h1> Memory Game </h1> <h4> Do not click the same twice! </h4>
+          {this.state.cardDisplay.map(cards => {
+            return (
               <div className="row">
-                <div className="col-4">
-                  <Card id={cards.id} image={cards.URL} />
-                </div>
+                <Card id={cards.id} image={cards.URL} />
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </Wrapper>
     );
   }
 }

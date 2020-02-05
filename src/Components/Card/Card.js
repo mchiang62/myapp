@@ -3,21 +3,23 @@ import "./Card.css";
 
 function Card(props) {
   return (
-    <div className="card">
-      {/* <div className="row">
-        <div className="col-3"> */}
-          <div className="img-container">
-            <img
-              // alt={props.name}
-              src={props.image}
-              id={props.id}
-              height="300px"
-              width="300px"
-              // onClick={() => props.rearrangeCards(props.id)}
-              // className="rearrange"
-            />
+    // <div className="container">
+    //   <div className="row">
+    //     <div className="col-4">
+          <div className="card">
+            <div className="img-container">
+              <img
+                alt="dogs"
+                src={props.image}
+                id={props.id}
+                height="250px"
+                width="250px"
+                // onClick={() => props.rearrangeCards(props.id)}
+                // className="rearrange"
+              />
+            </div>
           </div>
-        </div>
+    //     </div>
     //   </div>
     // </div>
   );
