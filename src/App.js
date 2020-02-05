@@ -18,7 +18,7 @@ class App extends Component {
             <Header>
             <h1> Memory Game </h1> 
             <br />
-            <h4>Do not click the same twice! </h4>
+            <h4>Do not click the same card twice! </h4>
             </Header>
           </div>
         </div>

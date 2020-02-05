@@ -9,7 +9,7 @@ function Card(props) {
           <div className="card">
             <div className="img-container">
               <img
-                alt="dogs"
+                alt="mario"
                 src={props.image}
                 id={props.id}
                 height="250px"
