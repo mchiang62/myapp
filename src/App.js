@@ -73,6 +73,7 @@ class App extends Component {
                 <Card
                   rearrangeCards={this.rearrangeCards}
                   id={cards.id}
+                  key={cards.id}
                   image={cards.URL}
                 />
               );
